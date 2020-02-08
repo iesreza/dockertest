@@ -1,0 +1,50 @@
+# Alarm thresholds
+alarm:
+  processor: 0.9
+  memory: 0.9
+  reset: true
+
+# App configurations
+app:
+  logo-mini: <b>F</b>oundation
+  logo-large: Hello World
+  title: Hello World
+  language: en-GB
+  path: ./httpdocs
+  assets: ./httpdocs/assets
+  static: ./httpdocs/static
+  session-age: 60
+
+# Server configurations
+server:
+  host: "0.0.0.0"
+  port:  8080
+  https: false
+  cert:  ca.crt
+  key:   ca.key
+# Database credentials
+database:
+  enabled: false
+  type: "mysql"
+  server: ""
+  database: ""
+  user: ""
+  pass: ""
+  cache: true
+  cacheSize: 1000
+  debug: true
+  ssl-mode: "disable"
+  params: "parseTime=true"
+#Log to file
+log:
+  write-file: true
+  size: 5
+  age: 7
+  level: debug
+  path: ./logs
+
+#Tweaks
+tweaks:
+  ballast: true
+  ballast-size: 100mb
+  processors: 0
